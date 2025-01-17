@@ -1,17 +1,19 @@
 import { CardCategorys } from "../components/CardCategorys"
 import { CardProducts } from "../components/CardProducts"
-import Footer from "../components/Footer"
+
 import { Gallery } from "../components/Gallery"
 import { HeroSection } from "../components/HeroSection"
-import { Navbar } from "../components/Navbar"
+
 import { OfferCard } from "../components/OfferCard"
 import { Testimonies } from "../components/Testimonies"
 import { WhyUs } from "../components/WhyUs"
+import { LayoutPage } from "../layout/LayoutPage"
 
 export const HomePage = () => {
   return (
     <>
-        <Navbar/>
+    <LayoutPage>
+        <>
         <HeroSection/>
         <CardProducts/>
         <CardCategorys/>
@@ -19,7 +21,11 @@ export const HomePage = () => {
         <Testimonies/>
         <OfferCard/>
         <Gallery/>
-        <Footer/>
+        
+        </>
+
+    </LayoutPage>
+        
     </>
   )
 }
